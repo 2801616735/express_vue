@@ -8,10 +8,24 @@
 #### 3、[nodejs v0.10.26](http://nodejs.cn/download/)
 ### 三、步骤说明
 #### 1、新建立目录
-*** mkdir express_vue
+    mkdir express_vue
 #### 2、进入目录
-*** 执行 npm init
+    执行 npm init 
+    (备注: a、执行命令前确保npm命令在PATH路径中 b、该命令的作用用于创建package.json文件)
 #### 3、安装express框架
-*** 执行 npm install express --save
+    执行 npm install express --save
+    (备注: --save这个选项的作用是express框架会被添加到package.json文件中的dependencies列表。今后运行在应用目录中执行 npm install 将自动安装依赖项列表中的模块)
+#### 4、简单的express案例
+    4.1、案例一: 利用express启动web服务
+    4.2、案例二: 简单的路由功能
+    4.3、案例三: 访问静态文件
+    4.4、案例四: 利用GET方法进行表单提交
+    4.5、案例五: 利用POST方法进行表单提交
+    4.6、案例六: 文件上传处理
+#### 5、vue与express
+    5.1、案例七: jquery+vue实现与后端数据交互
+    5.2、案例八: vue resource与后端数据交互
+
+#### 待续.....
 
 
