@@ -7,7 +7,7 @@ var express = require('express');    //引入express
 var app = express();
 app.use(express.static("resource")); //指定我们存放js，css，img，html等静态资源的文件目录
 var bodyParser = require('body-parser'); //用于处理post请求中的body内容模块
-app.use(bodyParser.urlencoded({ extended:false}));
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.get('/vue2.html',function(request,response){
     response.sendFile(__dirname+'/resource/html/vue2.html');
@@ -19,16 +19,18 @@ app.get('/get',function(request,response){
     var param = {
         'name' : request.query.name
     };
-    response.send('xiaobei');
+    //response.send('xiaobei');
     //response.end(JSON.stringify(param));
+	response.json(param);
 });
 
-app.post('/post',function(request,response){
+app.post('/post',urlencodedParser,function(request,response){
     console.log(request.body);
     var param = {
         'name' : request.body.name
     };
-    response.send(JSON.stringify(param));
+    //response.end(JSON.stringify(param));
+	response.json(param);
 });
 var server = app.listen(8080,function(){
     var host = server.address().address;

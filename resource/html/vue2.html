@@ -16,11 +16,12 @@ new Vue({
   el: '#example-3',
   methods: {
     get: function() {
-    this.$http.get('/get?name=123',).then(function(data){alert(data);},function(){alert('a');});
+    this.$http.get('/get',{params:{name:'xiaobei'}}).then(function(res){alert(res.body.name);},function(){alert('a');});
     },
     post: function ()
     {
-    this.$http.post('/post',{'name': 'bar'}).then(function(data){alert(data.name);},function(){alert('a');});
+    this.$http.post('/post',{'name': 'bar'},{emulateJSON:true}).then(function(data){
+		alert(data.body.name);},function(){alert('a');});
     }
   }
 })
