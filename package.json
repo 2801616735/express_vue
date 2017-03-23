@@ -1,0 +1,30 @@
+{
+  "name": "express_vue",
+  "version": "1.0.0",
+  "description": "this is a demo about express and vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/2801616735/express_vue.git"
+  },
+  "keywords": [
+    "express",
+    "vue",
+    "vue",
+    "resource"
+  ],
+  "author": "xiaobei 2801616735@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/2801616735/express_vue/issues"
+  },
+  "homepage": "https://github.com/2801616735/express_vue",
+  "dependencies": {
+    "express": "^4.15.2",
+    "body-parser": "^1.17.1",
+    "multer": "^1.3.0"
+  }
+}

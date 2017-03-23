@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>jquery+vue</title>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-html="message"></div>
+</div>
+</body>
+<script type="text/javascript">
+//通过jquery的ajax，与后端进行数据交互
+var data = '<h1>小贝</h1>';
+$(document).ready(function(){
+        $.ajax({
+           type: "get",
+           url: "/ajax",
+           data: "name=xiaobei",
+           dataType: 'json',
+           success: function(msg){
+              data = msg.name;
+              a();
+           }
+        });        
+});
+
+function a()
+{
+    new Vue({
+      el: '#app',
+      data: {
+        message:data
+      }
+    });
+}
+</script>
+</html>

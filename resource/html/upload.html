@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Post</title>
+</head>
+<form action="/file_ok" method="post" enctype="multipart/form-data" onsubmit="check_func();">
+     文件:<input type="file" name="image" value="" id="image">
+    <p><input type="submit" value="提交"></p>
+</form>
+<script type="text/javascript">
+    function check_func()
+    {
+        var $_name = document.getElementById("image");
+        var name = $_name.value;
+        if( name == "" )
+        {
+            alert("请选择图片");
+            return false;
+        }
+        return true;
+    }
+</script>
+</html>

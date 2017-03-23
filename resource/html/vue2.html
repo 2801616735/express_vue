@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>vue resource</title>
+    <script src="/js/vue.min.js"></script>
+    <script src="/js/vue-resource.min.js"></script>
+</head>
+<body>
+<div id="example-3">
+  <button v-on:click="get();">Say hi</button>
+  <button v-on:click="post();">Say what</button>
+</div>
+</body>
+<script type="text/javascript">
+new Vue({
+  el: '#example-3',
+  methods: {
+    get: function() {
+    this.$http.get('/get?name=123',).then(function(data){alert(data);},function(){alert('a');});
+    },
+    post: function ()
+    {
+    this.$http.post('/post',{'name': 'bar'}).then(function(data){alert(data.name);},function(){alert('a');});
+    }
+  }
+})
+</script>
+</html>
