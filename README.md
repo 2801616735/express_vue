@@ -16,15 +16,15 @@
     执行 npm install express --save
     (备注: --save这个选项的作用是express框架会被添加到package.json文件中的dependencies列表。今后运行在应用目录中执行 npm install 将自动安装依赖项列表中的模块)
 #### 4、简单的express案例
-    4.1、案例一: 利用express启动web服务
-    4.2、案例二: 简单的路由功能
-    4.3、案例三: 访问静态文件
-    4.4、案例四: 利用GET方法进行表单提交
-    4.5、案例五: 利用POST方法进行表单提交
-    4.6、案例六: 文件上传处理
+    4.1、[案例一: 利用express启动web服务](https://github.com/2801616735/express_vue/blob/master/1.js)
+    4.2、[案例二: 简单的路由功能](https://github.com/2801616735/express_vue/blob/master/2.js)
+    4.3、[案例三: 访问静态文件](https://github.com/2801616735/express_vue/blob/master/3.js)
+    4.4、[案例四: 利用GET方法进行表单提交](https://github.com/2801616735/express_vue/blob/master/4.js)
+    4.5、[案例五: 利用POST方法进行表单提交](https://github.com/2801616735/express_vue/blob/master/5.js)
+    4.6、[案例六: 文件上传处理](https://github.com/2801616735/express_vue/blob/master/6.js)
 #### 5、vue与express
-    5.1、案例七: jquery+vue实现与后端数据交互
-    5.2、案例八: vue resource与后端数据交互
+    5.1、[案例七: jquery+vue实现与后端数据交互](https://github.com/2801616735/express_vue/blob/master/7.js)
+    5.2、[案例八: vue resource与后端数据交互](https://github.com/2801616735/express_vue/blob/master/8.js)
 
 #### 待续.....
 
