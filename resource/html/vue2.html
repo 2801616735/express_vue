@@ -20,7 +20,7 @@ new Vue({
     },
     post: function ()
     {
-    this.$http.post('/post',{'name': 'bar'},{emulateJSON:true}).then(function(data){
+    this.$http.post('/post',{'name': 'hello'},{emulateJSON:true}).then(function(data){
 		alert(data.body.name);},function(){alert('a');});
     }
   }
