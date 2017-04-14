@@ -24,7 +24,7 @@
 ####    4.6、[案例六: 文件上传处理](https://github.com/2801616735/express_vue/blob/master/6.js)
 #### 5、vue与express
 ####    5.1、[案例七: jquery+vue实现与后端数据交互](https://github.com/2801616735/express_vue/blob/master/7.js)
-####    5.2、[案例八: vue resource与后端数据交互](https://github.com/2801616735/express_vue/blob/master/8.js)
+####    5.2、[案例八: 利用vue resource与后端数据交互](https://github.com/2801616735/express_vue/blob/master/8.js)
 
 #### 待续......
 
