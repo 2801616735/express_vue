@@ -10,7 +10,7 @@
 #### 1、新建立目录
     mkdir express_vue
 #### 2、进入目录
-    执行 npm init 
+   执行 npm init 
     (备注: a、执行命令前确保npm命令在PATH路径中 b、该命令的作用用于创建package.json文件)
 #### 3、安装express框架
     执行 npm install express --save
@@ -26,6 +26,6 @@
 ####    5.1、[案例七: jquery+vue实现与后端数据交互](https://github.com/2801616735/express_vue/blob/master/7.js)
 ####    5.2、[案例八: 利用vue resource与后端数据交互](https://github.com/2801616735/express_vue/blob/master/8.js)
 
-#### 待续......
+#### 待续
 
 
